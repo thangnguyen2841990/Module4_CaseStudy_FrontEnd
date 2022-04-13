@@ -13,6 +13,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/responsive.css">
+	<style>
+
+		.grid-image {
+			column-count: 3; /* Số cột */
+			column-gap: 10px; /* Khoảng cách giữa các cột */
+		}
+
+		.grid-image img {
+			display: grid;
+			grid-template-rows: 1fr auto;
+			margin-bottom: 15px;
+			break-inside: avoid;
+		}
+
+	</style>
 
 </head>
 <body>
@@ -208,12 +223,31 @@
 							<div class="col-lg-6">
 								<div class="central-meta">
 
+									<h5>bo may la thang</h5>
+									<div class="central-meta item">
+										<div class="user-post" id="post_User">
+
+
+
+
+
+
+
+
+
+										</div>
+									</div>
+									<div class="loadMore">
+
+
+
+									</div>
+
 								</div>
 							</div><!-- centerl meta -->
 							<div class="col-lg-3">
 								<aside class="sidebar static">
-
-							
+									<h5>thang la bo may</h5>
 								</aside>
 							</div><!-- sidebar -->
 						</div>	
@@ -376,6 +410,7 @@
 	<script src="js/script.js"></script>
 	<script src="js/map-init.js"></script>
 <script src="../auth/login.js"></script>
+<script src="home.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8c55_YHLvDHGACkQscgbGLtLRdxBDCfI"></script>
 
 </body>	
