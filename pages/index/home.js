@@ -51,13 +51,23 @@ function displayPost() {
                                                     <ins><a href="time-line.html" title="">${data[i].userInfo.fullName}</a></ins>
                                                     <span>${data[i].dateCreated}</span>
                                                 </div>
-                                           <li><a href="#" title="Languages" data-ripple=""><i class="fa fa-globe"></i></a>
-<div class="dropdowns languages">
-<a href="#" title=""><i class="ti-check"></i>English</a>
-<a href="#" title="">Tiếng việt</a>
+  <div class="container-fluid">
+   
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ...
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Chỉnh sửa bài viết</a></li>
+            <li><a class="dropdown-item" href="#">Xóa bài viết</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-</div>
-</li>
                                                  <div class="description">
 
                                                         <p id="description">
