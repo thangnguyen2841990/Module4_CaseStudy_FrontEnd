@@ -1,13 +1,13 @@
 function register() {
 
-    let username = $(`#username`).val();
-    let password = $(`#password`).val();
-    let confirmPassword = $(`#confirm-password`).val();
-    let fullName = $(`#fullName`).val();
-    let email = $(`#email`).val();
-    let phoneNumber = $(`#phoneNumber`).val();
-    let dateOfBirth = $(`#dateOfBirth`).val();
-    let address = $(`#address`).val();
+    let username = $(`#register_username`).val();
+    let password = $(`#register_password`).val();
+    let confirmPassword = $(`#register_confirm-password`).val();
+    let fullName = $(`#register_fullName`).val();
+    let email = $(`#register_email`).val();
+    let phoneNumber = $(`#register_phoneNumber`).val();
+    let dateOfBirth = $(`#register_dateOfBirth`).val();
+    let address = $(`#register_address`).val();
 
     let user = {
         username: username,
