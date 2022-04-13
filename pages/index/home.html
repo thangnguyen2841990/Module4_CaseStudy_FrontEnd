@@ -163,35 +163,23 @@
                                         </figure>
                                         <div class="newpst-input">
                                             <form method="post">
-                                                <textarea rows="2" placeholder="Hãy viết gì đó"></textarea>
+                                                <textarea rows="2" id="content-post" placeholder="Hãy viết gì đó"></textarea><span>
+                                                 <select id="status">
+                                                    <option value="1">Công khai</option>
+                                                    <option value="2">Chỉ bạn bè</option>
+                                                </select>
+                                            </span>
+
                                                 <div class="attachments">
                                                     <ul>
                                                         <li>
-                                                            <i class="fa fa-music"></i>
-                                                            <label class="fileContainer">
-                                                                <input type="file">
-                                                            </label>
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa fa-image"></i>
-                                                            <label class="fileContainer">
-                                                                <input type="file">
-                                                            </label>
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa fa-video-camera"></i>
-                                                            <label class="fileContainer">
-                                                                <input type="file">
-                                                            </label>
-                                                        </li>
-                                                        <li>
                                                             <i class="fa fa-camera"></i>
                                                             <label class="fileContainer">
-                                                                <input type="file">
+                                                                <input type="file" id="image" multiple>
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <button type="submit">Đăng</button>
+                                                            <button type="button" onclick="createNewPost()">Đăng</button>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -293,16 +281,13 @@
                                                     </div>
                                                     <div class="description">
 
-                                                        <p>
-                                                            World's most beautiful car in Curabitur <a href="#"
-                                                                                                       title="">#test
-                                                            drive booking !</a> the most beatuiful car available in
-                                                            america and the saudia arabia, you can book your test drive
-                                                            by our official website
+                                                        <p id="description">
+
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
+<<<<<<< HEAD
                                             <div class="coment-area">
                                                 <ul class="we-comet">
                                                     <li>

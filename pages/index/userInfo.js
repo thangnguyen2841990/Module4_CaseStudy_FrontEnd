@@ -47,8 +47,8 @@ function showUserDetails() {
             let fullName = `<p>${data.fullName}</p>`
             let avartar = ` <img src="http://localhost:8080/image/${data.avatar}"  width=100 height=100 style="vertical-align: middle; border-radius: 50%" >`
             let avartar1 = ` <img src="http://localhost:8080/image/${data.avatar}" width=1500 height=1500 style="vertical-align: middle; border-radius: 50%">`
-            let avartar2 = ` <img src="http://localhost:8080/image/${data.avatar}" width=45 height=45 style="vertical-align: middle; border-radius: 50%" >`
-            let background = ` <img src="http://localhost:8080/image/${data.backGround}" width=350 height=10000 >`
+            let avartar2 = ` <img src="http://localhost:8080/image/${data.avatar}" width=45px height=45px style="vertical-align: middle; border-radius: 50%" >`
+            let background = ` <img src="http://localhost:8080/image/${data.backGround}" width=350 height=1000 >`
             let background2 = ` <img src="http://localhost:8080/image/${data.backGround}" width=1500 height=1500 >`
             $(`#showUsername`).html(fullName);
             $(`#avatar`).html(avartar);

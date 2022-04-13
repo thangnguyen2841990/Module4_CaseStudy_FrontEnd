@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="" />
@@ -10,15 +9,30 @@
 	<title>Winku Social Network Toolkit</title>
 	<link rel="icon" href="images/fav.png" type="image/png" sizes="16x16">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/color.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<style>
+
+		.grid-image {
+			column-count: 3; /* Số cột */
+			column-gap: 10px; /* Khoảng cách giữa các cột */
+		}
+
+		.grid-image img {
+			display: grid;
+			grid-template-rows: 1fr auto;
+			margin-bottom: 15px;
+			break-inside: avoid;
+		}
+
+	</style>
 
 </head>
 <body>
 <!--<div class="se-pre-con"></div>-->
+
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -56,6 +70,7 @@
 	</div>
 </div>
 <div class="theme-layout">
+
 	<div class="responsive-header">
 		<div class="mh-head first Sticky">
 			<span class="mh-btns-left">
@@ -163,7 +178,7 @@
 
 	<section>
 		<div class="feature-photo">
-			<div id="background-gr1"></div>
+			<figure><div id="background-gr1"></div></figure>
 			<div class="add-btn">
 				<span>1205 followers</span>
 				<a href="#" title="" data-ripple="">Add Friend</a>
@@ -181,15 +196,14 @@
 					<div class="col-lg-2 col-sm-3">
 						<div class="user-avatar">
 							<figure>
-								<div id="avatar-gr7">
-								</div>
+								<div id="avatar-gr7"></div>
 								<form class="edit-phto">
-									<i class="fa fa-camera-retro"></i>										<!-- Button trigger modal -->
-										<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
-											Thay đổi ảnh đại diện
-										</button>
+									<i class="fa fa-camera-retro"></i>
+									<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+										Thay đổi ảnh đại diện
+									</button>
 
-										<!-- Modal -->
+									<!-- Modal -->
 
 									<label class="fileContainer">
 										<p onclick="showAvt()">Xem ảnh đại diện</p>
@@ -252,12 +266,31 @@
 							<div class="col-lg-6">
 								<div class="central-meta">
 
+									<h5>bo may la thang</h5>
+									<div class="central-meta item">
+										<div class="user-post" id="post_User">
+
+
+
+
+
+
+
+
+
+										</div>
+									</div>
+									<div class="loadMore">
+
+
+
+									</div>
+
 								</div>
 							</div><!-- centerl meta -->
 							<div class="col-lg-3">
 								<aside class="sidebar static">
-
-
+									<h5>thang la bo may</h5>
 								</aside>
 							</div><!-- sidebar -->
 						</div>
@@ -421,8 +454,8 @@
 <script src="js/map-init.js"></script>
 <script src="../auth/login.js"></script>
 <script src="userInfo.js"></script>
+<script src="home.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8c55_YHLvDHGACkQscgbGLtLRdxBDCfI"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-
 </html>
