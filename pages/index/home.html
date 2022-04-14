@@ -97,7 +97,7 @@
                 </li>
             </ul>
             <div class="user-img">
-                <img src="images/resources/admin.jpg" alt="">
+                <div id="avatar-gr4"></div>
                 <span class="status f-online"></span>
                 <div class="user-setting">
                     <a href="#" title=""><span class="status f-online"></span>online</a>
@@ -150,7 +150,7 @@
                                     <div class="widget stick-widget">
                                         <h4 class="widget-title">Gợi ý cho bạn</h4>
                                         <ul class="followers">
-                                          <div id="listfriends"></div>
+                                            <div id="listfriends"></div>
                                         </ul>
                                     </div><!-- who's following -->
                                 </aside>
@@ -159,39 +159,27 @@
                                 <div class="central-meta">
                                     <div class="new-postbox">
                                         <figure>
-                                            <img src="images/resources/admin2.jpg" alt="">
+                                            <div id="avatar-gr1"></div>
                                         </figure>
                                         <div class="newpst-input">
                                             <form method="post">
-                                                <textarea rows="2" placeholder="Hãy viết gì đó"></textarea>
+                                                <textarea rows="2" id="content-post" placeholder="Hãy viết gì đó"></textarea><span>
+                                                 <select id="status">
+                                                    <option value="1">Công khai</option>
+                                                    <option value="2">Chỉ bạn bè</option>
+                                                </select>
+                                            </span>
+
                                                 <div class="attachments">
                                                     <ul>
                                                         <li>
-                                                            <i class="fa fa-music"></i>
-                                                            <label class="fileContainer">
-                                                                <input type="file">
-                                                            </label>
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa fa-image"></i>
-                                                            <label class="fileContainer">
-                                                                <input type="file">
-                                                            </label>
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa fa-video-camera"></i>
-                                                            <label class="fileContainer">
-                                                                <input type="file">
-                                                            </label>
-                                                        </li>
-                                                        <li>
                                                             <i class="fa fa-camera"></i>
                                                             <label class="fileContainer">
-                                                                <input type="file">
+                                                                <input type="file" id="image" multiple>
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <button type="submit">Đăng</button>
+                                                            <button type="button" onclick="createNewPost()">Đăng</button>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -204,7 +192,7 @@
                                         <div class="user-post">
                                             <div class="friend-info">
                                                 <figure>
-                                                    <img src="images/resources/friend-avatar10.jpg" alt="">
+                                                    <div id="avatar-gr2"></div>
                                                 </figure>
                                                 <div class="friend-name">
                                                     <ins><a href="time-line.html" title="">Janice Griffith</a></ins>
@@ -293,21 +281,18 @@
                                                     </div>
                                                     <div class="description">
 
-                                                        <p>
-                                                            World's most beautiful car in Curabitur <a href="#"
-                                                                                                       title="">#test
-                                                            drive booking !</a> the most beatuiful car available in
-                                                            america and the saudia arabia, you can book your test drive
-                                                            by our official website
+                                                        <p id="description">
+
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
+<<<<<<< HEAD
                                             <div class="coment-area">
                                                 <ul class="we-comet">
                                                     <li>
                                                         <div class="comet-avatar">
-                                                            <img src="images/resources/comet-1.jpg" alt="">
+                                                            <img src="images/resources/comet-3.jpg" alt="">
                                                         </div>
                                                         <div class="we-comment">
                                                             <div class="coment-head">
@@ -361,7 +346,7 @@
                                                     </li>
                                                     <li>
                                                         <div class="comet-avatar">
-                                                            <img src="images/resources/comet-1.jpg" alt="">
+                                                            <img src="images/resources/friend-avatar.jpg" alt="">
                                                         </div>
                                                         <div class="we-comment">
                                                             <div class="coment-head">
@@ -384,7 +369,7 @@
                                                     </li>
                                                     <li class="post-comment">
                                                         <div class="comet-avatar">
-                                                            <img src="images/resources/comet-1.jpg" alt="">
+                                                            <div id="avatar-gr5"></div>
                                                         </div>
                                                         <div class="post-comt-box">
                                                             <form method="post">
@@ -496,7 +481,7 @@
                                                     <a href="time-line.html">andrew</a>
                                                     <i><a href="https://wpkixx.com/cdn-cgi/l/email-protection"
                                                           class="__cf_email__"
-                                                          data-cfemail="1872796b77767a587f75797174367b7775">[email&#160;protected]</a></i>
+                                                          data-cfemail="1Furfhe8BFbkEhXn1xcYPr8jYAACNpfV7p">[email&#160;protected]</a></i>
                                                 </div>
                                             </li>
                                             <li>
