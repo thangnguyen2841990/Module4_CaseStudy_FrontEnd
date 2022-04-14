@@ -1,2 +1,2 @@
-let currentUser = JSON.parse(localStorage.getItem("currentUser")) ;
+let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
